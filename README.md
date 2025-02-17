@@ -1,7 +1,7 @@
 # C-Sharp-Generic-API
 
-Task-1A - Finding API
-Task-1B - Get API Key
-Task-2  - Create Request
-Task-3A - Recieve Request
-Task-3B - Parse Data
+Task-1A - Finding API 
+Task-1B - Get API Key 
+Task-2  - Create Request 
+Task-3A - Recieve Request 
+Task-3B - Parse Data 
