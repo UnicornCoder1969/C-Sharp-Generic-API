@@ -1,16 +1,16 @@
 # Table of Contents
 1. [Prototype Effectiveness](#prototype-effectiveness)
-   1.1. [Assets](#assets)  
-   1.2. [Sources](#sources)  
-   1.3. [Legal and Ethical Implications](#legal-and-ethical-implications)  
+   - [Assets](#assets)  
+   - [Sources](#sources)  
+   - [Legal and Ethical Implications](#legal-and-ethical-implications)  
 2. [Requirements](#requirements)
-   2.1. [Functional Requirements](#functional-requirements)
-   2.2. [User Acceptance Criteria](#user-acceptance-criteria)
-   2.3. [Non-Functional Requirements](#non-functional-requirements)
+   - [Functional Requirements](#functional-requirements)
+   - [User Acceptance Criteria](#user-acceptance-criteria)
+   - [Non-Functional Requirements](#non-functional-requirements)
 3. [Key Performance Indicators](#key-performance-indicators)
 4. [Future Development](#future-development)
-   4.1. [Areas of Improvement](#areas-of-improvement)
-   4.2. [Additional Features](#additional-features)
+   - [Areas of Improvement](#areas-of-improvement)
+   - [Additional Features](#additional-features)
 
 ---
 
