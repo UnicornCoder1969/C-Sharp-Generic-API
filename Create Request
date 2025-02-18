@@ -4,3 +4,70 @@ Version Log
 Asset Log
 Actual Code
 Test Log
+
+TO get data
+
+using (SqlConnection connection = new SqlConnection(_connectionString))
+{
+    connection.Open();
+
+    using (SqlCommand command = new SqlCommand(SQLquery, connection))
+    {
+        using (SqlDataReader reader = command.ExecuteReader())
+        {
+            while (reader.Read())
+            {
+                users.Add(
+                    new User(
+                        int.Parse(reader["UserID"].ToString()), 
+                        reader["Username"].ToString(), 
+                        reader["Password"].ToString()
+                    )
+                );
+            }
+        }
+    }
+}
+
+TO set data
+
+string query = "INSERT INTO Users (Username, Password) VALUES (@Username, @Password)";
+
+// Insert the new user into the database using SQL command
+using (var connection = new SqlConnection(_connectionString))
+using (var command = new SqlCommand(query, connection))
+{
+    connection.Open(); 
+
+    command.Parameters.AddWithValue("@Username", txtUsername.Text);
+    command.Parameters.AddWithValue("@Password", txtPassword.Text);
+
+    int result = command.ExecuteNonQuery();
+
+   
+    if (result > 0)
+    {
+        users.Add(user); 
+        MessageBox.Show("Successfully Created Account", "Health Advice Group - Sign Up", MessageBoxButtons.OK, MessageBoxIcon.Information);
+    }
+
+API Get data
+
+            string key = "";
+            string url = $"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={key}&mode=json&units=metric";
+
+            // Create an HttpClient instance to make the GET request
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = client.GetAsync(url).Result;  // Using .Result to block and wait for the result
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show($"Error: {response.StatusCode}. Could not retrieve weather data.", "Health Advice Group - Weather Forecast");
+                    return;
+                }
+                response.EnsureSuccessStatusCode();
+
+                string data = response.Content.ReadAsStringAsync().Result;  // Blocking call
+                weatherResponse = JsonConvert.DeserializeObject<WeatherResponse>(data);
+            }
