@@ -27,9 +27,11 @@ Below are all the different Data Flow Diagrams for the proposed system. All use 
 
 ### Forecast Advice – Level 0
 Below is a level 0 Data Flow Diagram (DFD). This shows what will go in and out of the basic system. This design shows two entities that can input data into or take data out of the system. The user entity can provide the system with the current forecast, and the system will return advice made specifically for that user. The admin entity can also add new advice for conditions that haven’t been addressed yet (e.g., if it is a cloudy, rainy day, the user shouldn’t drive). The admin entity can add this new advice to the system.
+![Level 0 DFD](https://github.com/UnicornCoder1969/C-Sharp-Generic-API/blob/main/Parse%20Data/DFD%20Level%200.png)
 
 ### Forecast Advice – Level 1
 Below is a level 1 DFD that shows the above level 0 system in more detail. It shows how the system deals with user requests and how the admin adds new advice. The user entity provides the forecast to the system, where the data is then parsed into the correct format for the system. Once parsed, it is checked against the advice database, which contains all the advice in the system. The admin inputs new advice to the system, and it is parsed and saved to the advice database for future use.
+![Level 1 DFD](https://github.com/UnicornCoder1969/C-Sharp-Generic-API/blob/main/Parse%20Data/DFD%20Level%201.png)
 
 ### Air Quality – Level 0
 Below is the level 0 DFD for the air quality use case for the system. This design shows the air quality measuring device inputting air quality data into the system, where it is transformed into a readable format for the user. This readable format could be presented in multiple ways, such as a graph showing the quality over time or a simple sentence.
