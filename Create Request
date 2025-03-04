@@ -5,6 +5,35 @@ Asset Log
 Actual Code
 Test Log
 
+SET Data C# Code:
+Program Code:
+string connectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = file path ; Integrated Security = True; Connect Timeout = 30"; 
+SqlConnection sqlConnection = new SqlConnection(connectionString);
+ 
+SqlCommand command = new SqlCommand("command name", sqlConnection); 
+command.CommandType = CommandType.StoredProcedure;
+ 
+command.Parameters.AddWithValue("@parameter", variable);
+ 
+sqlConnection.Open(); 
+command.ExecuteNonQuery(); 
+sqlConnection.Close();
+ 
+ 
+SET Data Stored Procedure:
+
+Create procedure [dbo].[procedure name]
+ 
+( 
+@param1 type, 
+@param2 type 
+)
+ 
+as 
+begin 
+Insert into TABLE values @param1, @param2 (where goes here if you want it)
+end
+
 TO get data
 
 using (SqlConnection connection = new SqlConnection(_connectionString))
