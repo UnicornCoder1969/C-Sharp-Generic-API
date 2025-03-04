@@ -5,8 +5,46 @@ Asset Log
 Actual Code
 Test Log
 
+Get Data:
+
+string connectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = file path ; Integrated Security = True; Connect Timeout = 30"; 
+SqlConnection sqlConnection = new SqlConnection(connectionString);
+ 
+SqlCommand command = new SqlCommand("command name", sqlConnection); 
+command.CommandType = CommandType.StoredProcedure;
+ 
+command.Parameters.AddWithValue("@parameter", variable);
+ 
+SqlDataAdapter sd = new SqlDataAdapter(cmd);
+DataTable name = new DataTable()
+ 
+sqlConnection.Open(); 
+sd.Fill(datatable name); 
+sqlConnection.Close();
+ 
+foreach (DataRow dr in datatablename.Rows) 
+{
+            datatype variablename = (cast data type)(dr["column name"]); - regular get from datatable
+            string variable = dr["column"] != DBNull.Value ? (string)(dr["column"]) : "N/A"; - conditional get from datatable (gets data, if column for that row is blank, sets it as "N/A")
+            do the print to text box and stuff here
+}
+ 
+GET Stored Procedure:
+
+Create procedure [dbo].[procedure name]
+ 
+( 
+@param1 type, 
+@param2 type 
+)
+ 
+as 
+begin 
+Select * from TABLE where condition
+end
+
 SET Data C# Code:
-Program Code:
+
 string connectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = file path ; Integrated Security = True; Connect Timeout = 30"; 
 SqlConnection sqlConnection = new SqlConnection(connectionString);
  
