@@ -24,6 +24,7 @@
 ## Project Definition
 
 ## Stakeholders
+Who are the stakeholders
 
 ## SWOT Analysis
 
@@ -54,6 +55,7 @@
 ### User Acceptance Criteria for the Functional Requirements
 
 ## Decomposition
+Explain the requirements in detail split up
 
 ## Proposed Solution
 
