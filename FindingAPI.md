@@ -29,12 +29,16 @@ Who are the stakeholders
 ## SWOT Analysis
 
 ### Strength
+Why it will work
 
 ### Weakness
+Why it wont work
 
 ### Opportunities
+Open Field
 
 ### Threats
+Competition
 
 ## Functional & Non-Functional Requirements
 
