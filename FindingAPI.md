@@ -66,10 +66,13 @@ Explain the requirements in detail split up
 ## Research
 
 ### Hardware
+What hardware will be used
 
 ### Software
+What software will be used
 
 ## Emerging Technologies
+New techmologies that can be used in the project
 
 ## Meet the Client and User Needs
 
@@ -82,6 +85,8 @@ Explain the requirements in detail split up
 ## Wider Issues
 
 ### Legal Considerations
+GDPR
+Specific 
 
 ### Ethical Considerations
 
