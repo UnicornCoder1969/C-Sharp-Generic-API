@@ -16,7 +16,6 @@
 7. [Testing Strategy](#testing-strategy)
 
 ## Algorithm Designs & Data Requirements
-This background image is a perfect choice for the login screen of a household energy consumption dashboard, as it visually represents the core themes of sustainability, innovation, and energy awareness. The glowing light bulb symbolizes electricity and smart energy use, reinforcing the purpose of the application. The small green sprout growing inside the bulb signifies eco-friendly practices, growth, and a commitment to sustainability, aligning with the idea of responsible energy consumption. The soft, natural lighting and blurred green background create a calming and inviting atmosphere, making the user experience feel modern yet environmentally conscious. This imagery effectively sets the tone for an application that helps users monitor and optimize their household energy usage.
 ### Use Case Diagram:
 
 ---
