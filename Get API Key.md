@@ -79,5 +79,11 @@
 | Date of Test  | Component to be Tested | Type of Test | Prerequisites and Dependencies | Relationship |
 | ------------- | ---------------------- | ------------ | ------------------------------ | ------------ |
 
+white box - know everything of the program
+black box - know nothing of the program
+grey box - know parts of the program
+unit test - test parts of the program
+regression - testing old code after new code
+
 
 The modules have been tested in this order to ensure that the development company can create and test the modules as they are made. Testing in this sequence ensures that all functional elements are completed before testing the modules interfacing with each other.
