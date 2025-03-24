@@ -1,11 +1,15 @@
 Task 2 
 
 Version Log
+
 Asset Log
+
 Actual Code
+
 Test Log
 
-Get Data:
+# Get Data:
+```
 
 string connectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = file path ; Integrated Security = True; Connect Timeout = 30"; 
 SqlConnection sqlConnection = new SqlConnection(connectionString);
@@ -28,8 +32,10 @@ foreach (DataRow dr in datatablename.Rows)
             string variable = dr["column"] != DBNull.Value ? (string)(dr["column"]) : "N/A"; - conditional get from datatable (gets data, if column for that row is blank, sets it as "N/A")
             do the print to text box and stuff here
 }
- 
-GET Stored Procedure:
+ ```
+
+# GET Stored Procedure:
+```
 
 Create procedure [dbo].[procedure name]
  
@@ -42,8 +48,10 @@ as
 begin 
 Select * from TABLE where condition
 end
+```
 
-SET Data C# Code:
+# SET Data C# Code:
+```
 
 string connectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = file path ; Integrated Security = True; Connect Timeout = 30"; 
 SqlConnection sqlConnection = new SqlConnection(connectionString);
@@ -57,8 +65,10 @@ sqlConnection.Open();
 command.ExecuteNonQuery(); 
 sqlConnection.Close();
  
- 
-SET Data Stored Procedure:
+ ```
+
+# SET Data Stored Procedure:
+```
 
 Create procedure [dbo].[procedure name]
  
@@ -71,8 +81,10 @@ as
 begin 
 Insert into TABLE values @param1, @param2 (where goes here if you want it)
 end
+```
 
-TO get data
+# TO get data
+```
 
 using (SqlConnection connection = new SqlConnection(_connectionString))
 {
@@ -95,8 +107,10 @@ using (SqlConnection connection = new SqlConnection(_connectionString))
         }
     }
 }
+```
 
-TO set data
+# TO set data
+```
 
 string query = "INSERT INTO Users (Username, Password) VALUES (@Username, @Password)";
 
@@ -117,8 +131,9 @@ using (var command = new SqlCommand(query, connection))
         users.Add(user); 
         MessageBox.Show("Successfully Created Account", "Health Advice Group - Sign Up", MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
+```
 
-API Get data
+# API Get data
 
             string key = "";
             string url = $"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={key}&mode=json&units=metric";
@@ -140,7 +155,7 @@ API Get data
             }
 
 
-API Class
+# API Class
 
     public class Weather
     {
